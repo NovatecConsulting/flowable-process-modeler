@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.4.RELEASE'
+}
+
+group 'de.novatec.bpm'
+version '1.0-SNAPSHOT'
+def flowableVersion = "6.6.0"
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    implementation {
+        exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+    }
+}
+
+dependencies {
+    implementation "org.flowable:flowable-spring-boot-starter-ui-modeler:$flowableVersion"
+    implementation "org.flowable:flowable-spring-boot-starter-ui-admin:$flowableVersion"
+    implementation "org.flowable:flowable-spring-boot-starter-ui-task:$flowableVersion"
+    implementation "org.flowable:flowable-spring-boot-starter-ui-idm:$flowableVersion"
+}

@@ -1,0 +1,6 @@
+flowable:
+  common:
+    app:
+      idm-admin:
+        user: admin
+        password: test
