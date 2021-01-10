@@ -13,6 +13,7 @@ repositories {
 
 configurations {
     implementation {
+        // flowable startup fails due to conflicts with slf4j
         exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
     }
 }
