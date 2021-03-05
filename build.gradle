@@ -23,4 +23,5 @@ dependencies {
     implementation "org.flowable:flowable-spring-boot-starter-ui-admin:$flowableVersion"
     implementation "org.flowable:flowable-spring-boot-starter-ui-task:$flowableVersion"
     implementation "org.flowable:flowable-spring-boot-starter-ui-idm:$flowableVersion"
+//    implementation "org.postgresql:postgresql:42.2.19"
 }

@@ -13,3 +13,9 @@ Alternatively you can download the flowable war file and deploy it yourself.
     - Enter the credentials `admin:test`
 - Open the app "Modeler App" in the UI
 - Start creating your process models
+
+## How to set up external PostgreSQL database
+
+- Run `docker run --name flowable-postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres`
+- Uncomment `implementation "org.postgresql:postgresql:42.2.19"` in `build.gradle`
+- Uncomment spring-datasource in `application.yaml`
